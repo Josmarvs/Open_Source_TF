@@ -41,10 +41,10 @@ public class RecipeIngredientController {
     public ResponseEntity<List<Recipe>> findAllRecipe() {
         try {
             List<Recipe> recipes = recipeService.getAll();
-            if (recipes.size() > 0)
+           // if (recipes.size() > 0)
                 return new ResponseEntity<List<Recipe>>(recipes, HttpStatus.OK);
-            else
-                return new ResponseEntity<List<Recipe>>(HttpStatus.NO_CONTENT);
+           // else
+                //return new ResponseEntity<List<Recipe>>(HttpStatus.NO_CONTENT);
 
         } catch (Exception e) {
             return new ResponseEntity<List<Recipe>>(HttpStatus.INTERNAL_SERVER_ERROR);

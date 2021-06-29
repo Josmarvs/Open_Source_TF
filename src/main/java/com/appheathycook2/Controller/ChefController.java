@@ -29,10 +29,10 @@ public class ChefController {
     public ResponseEntity<List<Chef>> findAll(){
         try {
             List<Chef> chefs = chefService.getAll();
-            if (chefs.size() > 0)
+            //if (chefs.size() > 0)
                 return new ResponseEntity<List<Chef>>(chefs, HttpStatus.OK);
-            else
-                return new ResponseEntity<List<Chef>>(HttpStatus.NOT_FOUND);
+            //else
+               // return new ResponseEntity<List<Chef>>(HttpStatus.NOT_FOUND);
 
         } catch (Exception ex) {
             return new ResponseEntity<List<Chef>>(HttpStatus.INTERNAL_SERVER_ERROR);

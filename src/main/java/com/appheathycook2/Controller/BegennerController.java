@@ -32,10 +32,10 @@ public class BegennerController {
     public ResponseEntity<List<Beginner>> findAll(){
         try {
             List<Beginner> beginners = beginnerService.getAll();
-            if (beginners.size() > 0)
+            //if (beginners.size() > 0)
                 return new ResponseEntity<List<Beginner>>(beginners, HttpStatus.OK);
-            else
-                return new ResponseEntity<List<Beginner>>(HttpStatus.NOT_FOUND);
+            //else
+               // return new ResponseEntity<List<Beginner>>(HttpStatus.NOT_FOUND);
 
         } catch (Exception ex) {
             return new ResponseEntity<List<Beginner>>(HttpStatus.INTERNAL_SERVER_ERROR);

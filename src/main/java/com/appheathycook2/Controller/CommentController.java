@@ -43,10 +43,10 @@ public class CommentController {
     public ResponseEntity<List<Comment>> findAllComment(){
         try {
             List<Comment> comments = commentService.getAll();
-            if (comments.size() > 0)
+            //if (comments.size() > 0)
                 return new ResponseEntity<List<Comment>>(comments, HttpStatus.OK);
-            else
-                return new ResponseEntity<List<Comment>>(HttpStatus.NO_CONTENT);
+            //else
+                //return new ResponseEntity<List<Comment>>(HttpStatus.NO_CONTENT);
 
         } catch (Exception e) {
             return new ResponseEntity<List<Comment>>(HttpStatus.INTERNAL_SERVER_ERROR);

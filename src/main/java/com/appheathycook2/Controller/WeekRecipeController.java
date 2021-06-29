@@ -42,10 +42,10 @@ public class WeekRecipeController {
     public ResponseEntity<List<WeekRecipe>> findAllWeekRecipe() {
         try {
             List<WeekRecipe> weekRecipes = weekRecipeService.getAll();
-            if (weekRecipes.size() > 0)
+            //if (weekRecipes.size() > 0)
                 return new ResponseEntity<List<WeekRecipe>>(weekRecipes, HttpStatus.OK);
-            else
-                return new ResponseEntity<List<WeekRecipe>>(HttpStatus.NO_CONTENT);
+            //else
+                //return new ResponseEntity<List<WeekRecipe>>(HttpStatus.NO_CONTENT);
 
         } catch (Exception e) {
             return new ResponseEntity<List<WeekRecipe>>(HttpStatus.INTERNAL_SERVER_ERROR);

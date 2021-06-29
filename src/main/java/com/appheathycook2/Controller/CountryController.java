@@ -32,10 +32,10 @@ public class CountryController {
     public ResponseEntity<List<Country>> findAll() {
         try {
             List<Country> countrys = countryService.getAll();
-            if (countrys.size() > 0)
+           // if (countrys.size() > 0)
                 return new ResponseEntity<List<Country>>(countrys, HttpStatus.OK);
-            else
-                return new ResponseEntity<List<Country>>(HttpStatus.NOT_FOUND);
+           // else
+               // return new ResponseEntity<List<Country>>(HttpStatus.NOT_FOUND);
 
         } catch (Exception ex) {
             return new ResponseEntity<List<Country>>(HttpStatus.INTERNAL_SERVER_ERROR);
