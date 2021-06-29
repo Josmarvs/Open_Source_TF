@@ -26,7 +26,7 @@ public class Chef implements Serializable {
     private String dni;
     @Column(name="address",nullable = true,length = 150)
     private String address;
-    @Column(name="phone",nullable = true,length = 9)
+    @Column(name="phone",nullable = true,length = 10)
     private String phone;
     @Column(name="email",nullable = true,length = 50)
     private String email;
