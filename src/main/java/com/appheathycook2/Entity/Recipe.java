@@ -24,7 +24,7 @@ public class Recipe implements Serializable {
     private String description;
     @Column(name = "publication_Date",nullable = false)
     @Temporal(TemporalType.DATE)
-    private Date publication_Date;
+    private Date publication_date;
     @Column(name = "assessment", nullable = true,length = 200)
     private String assessment;
 

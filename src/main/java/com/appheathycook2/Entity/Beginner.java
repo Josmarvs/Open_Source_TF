@@ -19,9 +19,9 @@ public class Beginner implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name="firstname",nullable = false,length = 50)
-    private String firstname;
+    private String firstName;
     @Column(name="lastname",nullable = false,length = 50)
-    private String lastname;
+    private String lastName;
     @Column(name="dni",nullable = true,length = 8)
     private String dni;
     @Column(name="address",nullable = true,length = 150)
