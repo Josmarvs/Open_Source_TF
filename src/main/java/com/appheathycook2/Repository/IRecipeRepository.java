@@ -13,6 +13,6 @@ import java.util.List;
 @Repository
 public interface IRecipeRepository extends JpaRepository<Recipe,Long> {
 
-    @Query("Select re from Recipe re where re.publication_Date=:publicDate")
-    public List<Recipe> find(@Param("publicDate")Date publication_Date);
+    @Query("Select re from Recipe re where re.publication_date=:publicDate")
+    public List<Recipe> find(@Param("publicDate")Date publication_date);
 }

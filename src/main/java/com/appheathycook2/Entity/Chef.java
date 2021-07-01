@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@NamedQuery(name = "Chef.findByFirstname",query = "select ch from Chef ch where ch.firstname=?1")
+@NamedQuery(name = "Chef.findByFirstname",query = "select ch from Chef ch where ch.firstName=?1")
 public class Chef implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

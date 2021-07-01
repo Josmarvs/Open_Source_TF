@@ -88,7 +88,7 @@ public class BegennerController {
     })
     public ResponseEntity<List<Beginner>> findByLastName(@PathVariable("lastname") String lastname) {
         try {
-            List<Beginner> beginners = beginnerService.findByLastname(lastname);
+            List<Beginner> beginners = beginnerService.findByLastName(lastname);
             if (beginners.size() > 0)
                 return new ResponseEntity<List<Beginner>>(beginners, HttpStatus.OK);
             else
@@ -108,7 +108,7 @@ public class BegennerController {
     })
     public ResponseEntity<List<Beginner>> findByFirstName(@PathVariable("firstname") String firstname) {
         try {
-            List<Beginner> beginners = beginnerService.findByFirstname(firstname);
+            List<Beginner> beginners = beginnerService.findByFirstName(firstname);
             if (beginners.size() > 0)
                 return new ResponseEntity<List<Beginner>>(beginners, HttpStatus.OK);
             else
@@ -130,7 +130,7 @@ public class BegennerController {
             @PathVariable("firstname") String firstname, @PathVariable("lastname") String lastname
     ) {
         try {
-            List<Beginner> beginners = beginnerService.findByFirstnameAndLastname(firstname, lastname);
+            List<Beginner> beginners = beginnerService.findByFirstNameAndLastName(firstname, lastname);
             if (beginners.size() > 0)
                 return new ResponseEntity<List<Beginner>>(beginners, HttpStatus.OK);
             else

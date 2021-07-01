@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@NamedQuery(name = "Beginner.findByFirstname",query = "select b from Beginner b where b.firstname=?1")
+@NamedQuery(name = "Beginner.findByFirstname",query = "select b from Beginner b where b.firstName=?1")
 public class Beginner implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

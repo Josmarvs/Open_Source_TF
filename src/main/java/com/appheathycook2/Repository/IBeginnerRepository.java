@@ -9,8 +9,8 @@ import java.util.List;
 @Repository
 public interface IBeginnerRepository extends JpaRepository<Beginner,Long> {
     public Beginner findByDni(String dni);
-    public List<Beginner> findByLastname(String lastname);
-    public List<Beginner> findByFirstname(String firstname);
-    public List<Beginner> findByFirstnameAndLastname(String firstname, String lastname);
+    public List<Beginner> findByLastName(String lastname);
+    public List<Beginner> findByFirstName(String firstname);
+    public List<Beginner> findByFirstNameAndLastName(String firstname, String lastname);
 
 }

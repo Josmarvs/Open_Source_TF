@@ -9,8 +9,8 @@ import java.util.List;
 @Repository
 public interface IChefRepository extends JpaRepository<Chef,Long> {
     public Chef findByDni(String dni);
-    public List<Chef> findByLastname(String lastname);
-    public List<Chef> findByFirstname(String firstname);
-    public List<Chef> findByFirstnameAndLastname(String firstname, String lastname);
+    public List<Chef> findByLastName(String lastname);
+    public List<Chef> findByFirstName(String firstname);
+    public List<Chef> findByFirstNameAndLastName(String firstname, String lastname);
 
 }

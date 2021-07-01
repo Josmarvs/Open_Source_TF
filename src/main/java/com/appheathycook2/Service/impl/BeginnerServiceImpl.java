@@ -45,17 +45,17 @@ public class BeginnerServiceImpl implements IBeginnerService {
     }
 
     @Override
-    public List<Beginner> findByLastname(String lastname) throws Exception {
-        return beginnerRepository.findByLastname(lastname);
+    public List<Beginner> findByLastName(String lastname) throws Exception {
+        return beginnerRepository.findByLastName(lastname);
     }
 
     @Override
-    public List<Beginner> findByFirstname(String firstname) throws Exception {
-        return beginnerRepository.findByFirstname((firstname));
+    public List<Beginner> findByFirstName(String firstname) throws Exception {
+        return beginnerRepository.findByFirstName((firstname));
     }
 
     @Override
-    public List<Beginner> findByFirstnameAndLastname(String firstname, String lastname) throws Exception {
-        return beginnerRepository.findByFirstnameAndLastname(firstname,lastname);
+    public List<Beginner> findByFirstNameAndLastName(String firstname, String lastname) throws Exception {
+        return beginnerRepository.findByFirstNameAndLastName(firstname,lastname);
     }
 }

@@ -85,7 +85,7 @@ public class ChefController {
     })
     public ResponseEntity<List<Chef>> findByLastName(@PathVariable("lastname") String lastname) {
         try {
-            List<Chef> chefs = chefService.findByLastname(lastname);
+            List<Chef> chefs = chefService.findByLastName(lastname);
             if (chefs.size() > 0)
                 return new ResponseEntity<List<Chef>>(chefs, HttpStatus.OK);
             else
@@ -105,7 +105,7 @@ public class ChefController {
     })
     public ResponseEntity<List<Chef>> findByFirstName(@PathVariable("firstname") String firstname) {
         try {
-            List<Chef> chefs = chefService.findByFirstname(firstname);
+            List<Chef> chefs = chefService.findByFirstName(firstname);
             if (chefs.size() > 0)
                 return new ResponseEntity<List<Chef>>(chefs, HttpStatus.OK);
             else
@@ -127,7 +127,7 @@ public class ChefController {
             @PathVariable("firstname") String firstname, @PathVariable("lastname") String lastname
     ) {
         try {
-            List<Chef> chefs = chefService.findByFirstnameAndLastname(firstname, lastname);
+            List<Chef> chefs = chefService.findByFirstNameAndLastName(firstname, lastname);
             if (chefs.size() > 0)
                 return new ResponseEntity<List<Chef>>(chefs, HttpStatus.OK);
             else

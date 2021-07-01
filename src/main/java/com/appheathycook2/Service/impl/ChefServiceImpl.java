@@ -47,17 +47,17 @@ public class ChefServiceImpl implements IChefService {
     }
 
     @Override
-    public List<Chef> findByLastname(String lastname) throws Exception {
-        return chefRepository.findByLastname(lastname);
+    public List<Chef> findByLastName(String lastname) throws Exception {
+        return chefRepository.findByLastName(lastname);
     }
 
     @Override
-    public List<Chef> findByFirstname(String firstname) throws Exception {
-        return chefRepository.findByFirstname((firstname));
+    public List<Chef> findByFirstName(String firstname) throws Exception {
+        return chefRepository.findByFirstName((firstname));
     }
 
     @Override
-    public List<Chef> findByFirstnameAndLastname(String firstname, String lastname) throws Exception {
-        return chefRepository.findByFirstnameAndLastname(firstname,lastname);
+    public List<Chef> findByFirstNameAndLastName(String firstname, String lastname) throws Exception {
+        return chefRepository.findByFirstNameAndLastName(firstname,lastname);
     }
 }
