@@ -40,7 +40,7 @@ public class RecipeServiceImpl implements IRecipeService {
     }
 
     @Override
-    public List<Recipe> find(Date publication_Date) throws Exception {
-        return recipeRepository.find(publication_Date);
+    public List<Recipe> find(Date publication_date) throws Exception {
+        return recipeRepository.find(publication_date);
     }
 }
